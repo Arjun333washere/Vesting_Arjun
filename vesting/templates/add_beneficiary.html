@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Beneficiary</title>
+</head>
+<body>
+    <h1>Add Beneficiary</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="beneficiary_address">Beneficiary Address:</label>
+        <input type="text" id="beneficiary_address" name="beneficiary_address" required><br>
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" required><br>
+        <button type="submit">Add Beneficiary</button>
+    </form>
+</body>
+</html>
